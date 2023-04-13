@@ -1,8 +1,10 @@
 //call my required modules
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { Triangle, Circle, Square } = require("./lib/shapes");
-const { isValidColor, rgbToHex } = require("./lib/color");
+const {Triangle, Circle, Square} = require("./lib/shapes");
+const {isValidColor} = require("./lib/color");
+const LogoGenerator = require("./lib/logoGenerator");
+
 
 //Questions for the user to answer
 async function promptUser() {
@@ -53,5 +55,22 @@ async function promptUser() {
 }
 
 //function to write the file
+async function main() {
+    const answers = await promptUser();
+    const logoGenerator = new LogoGenerator(
+      answers.text,
+      answers.textColor,
+      answers.shape,
+      answers.shapeColor
+    );
+    const svgMarkup = logoGenerator.generateLogo();
+    saveSVGToFile(svgMarkup);
+    console.log("Generated logo.svg");
+  }
 
+  function saveSVGToFile(svgMarkup) {
+    fs.writeFileSync("logo.svg", svgMarkup, "utf8");
+  }
+  
+  main();
 
