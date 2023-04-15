@@ -1,21 +1,34 @@
 # A10-SVG-Logo-Maker
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Description
 
 A command line application to help you easily create SVG logos for you users. The application will ask you questions on how you would like your logo to look. Then it will generate a .svg file for you!
 
+## Table of Contents
+
+  - [Usage](#usage)
+  - [Video Walkthrough](#video-walkthrough)
+  - [Screenshot](#screenshot)
+  - [Credits](#credits)
+  - [License](#license)
 ## Usage
 
 From your terminal in your code editor, run "node index.js" to start the questions!     
 
 ## Video Walkthrough
-![A link to the video](google.com "Video Walkthrough")
+
+[Functionality video](https://drive.google.com/file/d/1KqKjskudwJ9lR16cZXAR_wNDAK8e9wgD/view "Video Walkthrough")
+
+## Screenshot
+
+![A picture of the logo](assets/svgviewer-png-output.png "Generated Logo")
 
 ## Credits
-Manny, Professor at Bootcamp (Class notes)
-Mdn Web Docs (SVG Documentation)
-Chat GPT (Regex GOD)
-UC Berkeley Coding Bootcamp Extension
+ - Manny, Professor at Boot Camp (Class notes)
+ - Mdn Web Docs (SVG Documentation)
+ - Chat GPT (Regex GOD)
+ - UC Berkeley Coding Boot Camp Extension
 
 ## License
 

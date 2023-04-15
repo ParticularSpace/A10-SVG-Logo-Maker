@@ -1,13 +1,12 @@
 //import required modules
 const fs = require('fs');
-// const {Triangle, Circle, Square} = require("./lib/shapes");
 const {isValidColor} = require("./lib/color");
 const LogoMaker = require("./lib/logoMaker");
 
 (async () => {
 
   // Import inquirer
- const { default: inquirer } = await import('inquirer'); 
+ const {default: inquirer} = await import('inquirer'); 
 
 //Questions for the user to answer
 async function promptUser() {
